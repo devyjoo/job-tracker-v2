@@ -151,7 +151,7 @@ select.fi{cursor:pointer}
             <th style="width:108px">기업명</th><th style="width:80px">지원상태</th><th style="width:74px">산업군</th>
             <th style="width:120px">직무/직급</th><th style="width:88px">지원일</th><th style="width:88px">마감일</th>
             <th style="width:50px">1차</th><th style="width:50px">2차</th><th style="width:50px">3차</th><th style="width:50px">4차</th>
-            <th style="width:64px">규모</th><th style="width:74px">최종상태</th>
+            <th style="width:64px">규모</th><th style="width:74px">최종상태</th><th style="width:44px">링크</th>
           </tr></thead>
           <tbody id="tbody">
             <tr class="empty-row"><td colspan="12"><i class="ti ti-rocket" style="font-size:26px;display:block;margin:0 auto 9px;color:#B5D4F4"></i>공고 URL을 입력해서 시작해봐요!</td></tr>
@@ -747,12 +747,13 @@ function render(){
     <td style="font-weight:600">${j.co||'—'}</td>
     <td><span class="badge b-${j.st||'지원예정'}">${j.st||'지원예정'}</span></td>
     <td>${j.ind?`<span class="ind">${j.ind}</span>`:'—'}</td>
-    <td style="word-break:break-word;white-space:normal;max-width:130px">${j.url ? `<a href="${j.url}" target="_blank" rel="noopener" onclick="event.stopPropagation()" style="color:var(--sky4);text-decoration:none;font-weight:600;" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">${j.role||'—'}</a>` : (j.role||'—')}</td>
+    <td style="word-break:break-word;white-space:normal;max-width:130px">${j.role||'—'}</td>
     <td style="color:var(--txt2)">${j.apd||'—'}</td>
     <td style="color:var(--txt2)">${j.dl||'—'}</td>
     <td>${pill(j.s1)}</td><td>${pill(j.s2)}</td><td>${pill(j.s3)}</td><td>${pill(j.s4)}</td>
     <td>${j.sz?`<span class="co">${j.sz}</span>`:'—'}</td>
     <td>${j.fin?`<span class="badge b-${j.fin==='합격'?'최종합격':j.fin==='불합격'?'불합격':'지원완료'}">${j.fin}</span>`:'—'}</td>
+    <td>${j.url?`<a href="${j.url}" target="_blank" rel="noopener" onclick="event.stopPropagation()" style="color:var(--sky4);font-size:16px;text-decoration:none;" title="공고 바로가기"><i class="ti ti-external-link"></i></a>`:'—'}</td>
   </tr>`).join('');
   stats();
 }
