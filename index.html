@@ -12,12 +12,12 @@
   --sky:#EBF4FF;--sky2:#DAEEFF;--sky3:#B5D4F4;--sky4:#378ADD;--sky5:#185FA5;--sky6:#0C447C;
   --bdr:#DDE8F3;--txt:#111827;--txt2:#4B6378;--txt3:#9BB0C4;
 }
-body{font-family:'Pretendard',sans-serif;font-size:16px;background:#F4F8FC;min-height:100vh;padding:1.5rem}
+body{font-family:'Pretendard',sans-serif;font-size:17px;background:#F4F8FC;min-height:100vh;padding:1.5rem}
 .wrap{background:#fff;border-radius:20px;padding:1.75rem;max-width:1100px;margin:0 auto;box-shadow:0 1px 4px rgba(55,138,221,.08)}
 .header{display:flex;align-items:center;gap:12px;margin-bottom:1.5rem}
 .logo{width:38px;height:38px;background:var(--sky4);border-radius:11px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
 .logo i{font-size:19px;color:#fff}
-.app-title{font-size:19px;font-weight:600;color:var(--txt);letter-spacing:-.4px}
+.app-title{font-size:21px;font-weight:600;color:var(--txt);letter-spacing:-.4px}
 .app-sub{font-size:13px;color:var(--txt3);margin-top:1px}
 .tabs{display:flex;gap:2px;background:var(--sky);border-radius:10px;padding:3px;margin-bottom:1.5rem;border:.5px solid var(--bdr)}
 .tab{flex:1;padding:9px 12px;font-size:14px;font-weight:500;color:var(--txt2);cursor:pointer;border:none;background:none;border-radius:8px;transition:all .15s;font-family:'Pretendard',sans-serif}
@@ -27,8 +27,8 @@ body{font-family:'Pretendard',sans-serif;font-size:16px;background:#F4F8FC;min-h
 /* ── LIST TAB ── */
 .stats{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-bottom:1.25rem}
 .stat{background:var(--sky);border:.5px solid var(--bdr);border-radius:12px;padding:11px 8px;text-align:center}
-.stat-num{font-size:26px;font-weight:600;color:var(--sky4)}
-.stat-label{font-size:12px;color:var(--txt3);margin-top:2px;font-weight:500;letter-spacing:.2px}
+.stat-num{font-size:28px;font-weight:600;color:var(--sky4)}
+.stat-label{font-size:13px;color:var(--txt3);margin-top:2px;font-weight:500;letter-spacing:.2px}
 .toolbar{display:flex;gap:8px;margin-bottom:12px}
 .url-wrap{flex:1;display:flex;align-items:center;background:#fff;border:1.5px solid var(--bdr);border-radius:10px;padding:0 12px;gap:8px;transition:border-color .15s}
 .url-wrap:focus-within{border-color:var(--sky4)}
@@ -41,19 +41,19 @@ body{font-family:'Pretendard',sans-serif;font-size:16px;background:#F4F8FC;min-h
 .tbl-wrap{overflow-x:auto}
 table{width:100%;border-collapse:collapse;min-width:860px;table-layout:fixed}
 thead tr{background:var(--sky)}
-th{padding:9px 12px;text-align:left;font-size:12px;font-weight:700;color:var(--txt3);border-bottom:.5px solid var(--bdr);white-space:nowrap;letter-spacing:.5px;text-transform:uppercase}
-td{padding:10px 12px;border-bottom:.5px solid var(--sky);font-size:13px;color:var(--txt);vertical-align:middle}
+th{padding:10px 12px;text-align:left;font-size:12px;font-weight:700;color:var(--txt3);border-bottom:.5px solid var(--bdr);white-space:nowrap;letter-spacing:.5px;text-transform:uppercase}
+td{padding:11px 12px;border-bottom:.5px solid var(--sky);font-size:14px;color:var(--txt);vertical-align:middle}
 tr:last-child td{border-bottom:none}
 tbody tr:hover td{background:var(--sky);cursor:pointer}
 .empty-row td{text-align:center;color:var(--txt3);padding:3.5rem;font-size:14px}
-.badge{display:inline-block;font-size:12px;padding:3px 10px;border-radius:20px;font-weight:700;white-space:nowrap}
+.badge{display:inline-block;font-size:13px;padding:3px 10px;border-radius:20px;font-weight:700;white-space:nowrap}
 .b-지원예정{background:#EBF4FF;color:#185FA5}.b-지원완료{background:#EAF3DE;color:#3B6D11}
 .b-서류합격{background:#EEEDFE;color:#3C3489}.b-면접예정{background:#FAEEDA;color:#633806}
 .b-불합격{background:#FCEBEB;color:#791F1F}.b-최종합격{background:#D0E9F8;color:#0C447C}
 .ind{display:inline-block;font-size:12px;padding:2px 9px;border-radius:6px;background:var(--sky2);color:var(--sky5);font-weight:600}
 .co{display:inline-block;font-size:12px;padding:2px 9px;border-radius:6px;background:var(--sky);color:var(--txt2);border:.5px solid var(--bdr);font-weight:500}
 .step-pill{display:inline-block;font-size:12px;padding:2px 9px;border-radius:6px;background:var(--sky);color:var(--txt2);font-weight:500}
-.add-row{display:flex;align-items:center;gap:6px;padding:10px 14px;color:var(--txt3);font-size:13px;cursor:pointer;font-weight:500}
+.add-row{display:flex;align-items:center;gap:6px;padding:10px 14px;color:var(--txt3);font-size:14px;cursor:pointer;font-weight:500}
 .add-row:hover{background:var(--sky);color:var(--sky4)}
 
 /* ── MODAL ── */
@@ -61,7 +61,7 @@ tbody tr:hover td{background:var(--sky);cursor:pointer}
 .modal-bg.open{display:flex}
 .modal{background:#fff;border-radius:16px;border:.5px solid var(--bdr);padding:1.5rem;width:100%;max-width:580px;max-height:90vh;overflow-y:auto}
 .modal-hdr{display:flex;justify-content:space-between;align-items:center;margin-bottom:1.25rem}
-.modal-title{font-size:16px;font-weight:600;color:var(--txt)}
+.modal-title{font-size:17px;font-weight:600;color:var(--txt)}
 .close-btn{background:var(--sky);border:none;border-radius:8px;width:30px;height:30px;cursor:pointer;color:var(--txt2);display:flex;align-items:center;justify-content:center;flex-shrink:0}
 .mg{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:10px}
 .sg{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:12px}
@@ -93,20 +93,20 @@ select.fi{cursor:pointer}
 .pitem:hover{border-color:var(--bdr)}
 .pitem:last-child{margin-bottom:0}
 .pih{display:flex;justify-content:space-between;align-items:flex-start;gap:8px}
-.pit{font-weight:600;font-size:14px;color:var(--txt);line-height:1.4}
-.pis{font-size:12px;color:var(--txt2);margin-top:3px;line-height:1.5}
+.pit{font-weight:600;font-size:15px;color:var(--txt);line-height:1.4}
+.pis{font-size:13px;color:var(--txt2);margin-top:3px;line-height:1.5}
 .pid{font-size:11px;color:var(--txt3);white-space:nowrap;flex-shrink:0;margin-top:2px;font-weight:600;background:rgba(55,138,221,.08);padding:2px 7px;border-radius:5px;letter-spacing:.1px}
-.pdesc{font-size:13px;color:var(--txt2);margin-top:8px;line-height:1.8;display:none;border-top:.5px solid var(--bdr);padding-top:8px}
+.pdesc{font-size:14px;color:var(--txt2);margin-top:8px;line-height:1.8;display:none;border-top:.5px solid var(--bdr);padding-top:8px}
 .pdesc.open{display:block}
 .pdesc ul{padding-left:15px}.pdesc li{margin-bottom:4px}
 .pdesc p{line-height:1.7}
 .pdesc .num{color:var(--sky4);font-weight:600}
 .chev{font-size:12px;color:var(--txt3);flex-shrink:0;transition:transform .2s}
 .chev.open{transform:rotate(180deg)}
-.tag{display:inline-block;font-size:12px;padding:3px 10px;border-radius:20px;background:var(--sky);color:var(--sky5);font-weight:600;border:.5px solid var(--bdr);margin:2px 2px 2px 0}
+.tag{display:inline-block;font-size:13px;padding:3px 10px;border-radius:20px;background:var(--sky);color:var(--sky5);font-weight:600;border:.5px solid var(--bdr);margin:2px 2px 2px 0}
 .basic-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 .fl2{font-size:11px;color:var(--txt3);margin-bottom:3px;font-weight:700;text-transform:uppercase;letter-spacing:.4px}
-.fv{font-size:14px;color:var(--txt);font-weight:500}
+.fv{font-size:15px;color:var(--txt);font-weight:500}
 .skill-row{margin-bottom:10px}
 .skill-row:last-child{margin-bottom:0}
 .filter-btn{font-size:12px;padding:5px 12px;border:1.5px solid var(--bdr);border-radius:20px;background:#fff;cursor:pointer;color:var(--txt2);font-family:'Pretendard',sans-serif;font-weight:500;transition:all .15s}
@@ -747,7 +747,7 @@ function render(){
     <td style="font-weight:600">${j.co||'—'}</td>
     <td><span class="badge b-${j.st||'지원예정'}">${j.st||'지원예정'}</span></td>
     <td>${j.ind?`<span class="ind">${j.ind}</span>`:'—'}</td>
-    <td style="word-break:break-word;white-space:normal;max-width:130px">${j.role||'—'}</td>
+    <td style="word-break:break-word;white-space:normal;max-width:130px">${j.url ? `<a href="${j.url}" target="_blank" rel="noopener" onclick="event.stopPropagation()" style="color:var(--sky4);text-decoration:none;font-weight:600;" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">${j.role||'—'}</a>` : (j.role||'—')}</td>
     <td style="color:var(--txt2)">${j.apd||'—'}</td>
     <td style="color:var(--txt2)">${j.dl||'—'}</td>
     <td>${pill(j.s1)}</td><td>${pill(j.s2)}</td><td>${pill(j.s3)}</td><td>${pill(j.s4)}</td>
